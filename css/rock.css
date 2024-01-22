@@ -1,14 +1,19 @@
 body {
-  background-color: rgba(172, 60, 60, 0.707);
+  background-color: rgb(134, 40, 227);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1580234831315-438a4813685c?q=80&w=2934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .title {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: black;
 }
 
 .move-icon {
@@ -17,12 +22,12 @@ body {
 }
 .move-button {
   background-color: transparent;
-  border: 3px solid white;
+  border: 3px solid rgba(0, 0, 0, 0.711);
   width: 100px;
   height: 100px;
   border-radius: 60px;
   cursor: pointer;
-  margin-right: 20px;
+  margin-left: 30px;
   transition: 0.2s;
 }
 .move-button:hover {
@@ -38,13 +43,18 @@ div {
   font-size: 20px;
   font-weight: bold;
   margin-top: 50px;
+  margin-left: 30px;
+  color: black;
 }
 .score {
   margin-top: 50px;
+  margin-left: 30px;
+  color: black;
+  font-size: larger;
 }
 
 .reset-button {
-  background-color: green;
+  background-color: rgb(0, 0, 0);
   border-style: none;
   width: 100px;
   height: 50px;
@@ -52,4 +62,5 @@ div {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
+  margin-left: 30px;
 }

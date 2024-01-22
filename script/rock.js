@@ -12,34 +12,34 @@ function playGame(playerMove) {
 
   if (playerMove === "scissors") {
     if (computerMove === "rock") {
-      result = "you loose";
+      result = "YOU LOOSE";
     } else if (computerMove === "paper") {
-      result = "you win";
+      result = "YOU WIN";
     } else if (computerMove === "scissors") {
-      result = "tie";
+      result = "TIE";
     }
   } else if (playerMove === "paper") {
     if (computerMove === "rock") {
-      result = "you win";
+      result = "YOU WIN";
     } else if (computerMove === "paper") {
-      result = "tie";
+      result = "TIE";
     } else if (computerMove === "scissors") {
-      result = "you loose";
+      result = "YOU LOOSE";
     }
   } else if (playerMove === "rock") {
     if (computerMove === "rock") {
-      result = "tie";
+      result = "TIE";
     } else if (computerMove === "paper") {
-      result = "you loose";
+      result = "YOU LOOSE";
     } else if (computerMove === "scissors") {
-      result = "you win";
+      result = "YOU WIN";
     }
   }
   if (result === "you win") {
     score.wins += 1;
-  } else if (result === "you loose") {
+  } else if (result === "YOU LOOSE") {
     score.losses += 1;
-  } else if (result === "tie") {
+  } else if (result === "TIE") {
     score.ties += 1;
   }
 
@@ -48,12 +48,9 @@ function playGame(playerMove) {
   upadateScoreElement();
 
   document.querySelector(".js-result").innerHTML = result;
-
-  document.querySelector(
-    ".js-moves"
-  ).innerHTML = `you <img src="images/${playerMove}-emoji.png" class="move-icon"> 
-
-computer <img src="images/${computerMove}-emoji.png" class="move-icon" >
+  document.querySelector(".js-moves").innerHTML = `
+  <span style="color: black; font-weight: bold;">YOU</span> <img src="images/${playerMove}-emoji.png" class="move-icon" style="margin-right: 10px; width: 50px; height: 50px;"> 
+  <span style="color: black; font-weight: bold;">COMPUTER</span> <img src="images/${computerMove}-emoji.png" class="move-icon" style="width: 50px; height: 50px;">
 `;
 }
 
