@@ -1,63 +1,55 @@
-body{
-    background-color: black;
-    color:white;
-    font-family: Arial, Helvetica, sans-serif;
-    
-    }
-    .title{
-        font-size: 30px;
-        font-weight: bold;
-        display: flex;
-        align-items: center ;
-        justify-content: center;
-       
-    }
-    
-    .move-icon{
-        width: 50px;
-        height: 50px;
-        
-    }
-    .move-button{
-       
-        background-color: transparent;
-        border: 3px solid white;
-        width: 100px;
-        height: 100px;
-        border-radius: 60px;
-        cursor: pointer;
-        margin-right: 20px;
-        transition: 0.2s;
-    
-    }
-    .move-button:hover{
-        background-color: green;
-    
-    }
-    
-    div{
-        display: flex;
-        align-items: center ;
-        justify-content: center;
-    
-    }
-    .result{
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 50px;
-    }
-    .score{
-        margin-top: 50px;
-    }
-    
-    .reset-button{
-        background-color: green;
-        border-style: none;
-        width: 100px;
-        height: 50px;
-        cursor: pointer;
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-    }
-    
+body {
+  background-color: rgba(172, 60, 60, 0.707);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.move-icon {
+  width: 50px;
+  height: 50px;
+}
+.move-button {
+  background-color: transparent;
+  border: 3px solid white;
+  width: 100px;
+  height: 100px;
+  border-radius: 60px;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: 0.2s;
+}
+.move-button:hover {
+  background-color: green;
+}
+
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.result {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.score {
+  margin-top: 50px;
+}
+
+.reset-button {
+  background-color: green;
+  border-style: none;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
