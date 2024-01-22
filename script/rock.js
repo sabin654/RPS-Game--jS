@@ -35,7 +35,7 @@ function playGame(playerMove) {
       result = "YOU WIN";
     }
   }
-  if (result === "you win") {
+  if (result === "YOU WIN") {
     score.wins += 1;
   } else if (result === "YOU LOOSE") {
     score.losses += 1;
